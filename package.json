@@ -81,6 +81,6 @@
     "Android >= 3.2"
   ],
   "devDependencies": {
-    "fast-app-service": "^0.0.2"
+    "fast-app-service": "^0.0.3"
   }
 }
