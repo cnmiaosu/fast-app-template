@@ -1,0 +1,39 @@
+{
+  "name": "fast-app-template",
+  "version": "0.0.1",
+  "description": "fast-app-template",
+  "scripts": {
+    "serve": "fast-app-service serve",
+    "build": "fast-app-service build",
+    "dll": "fast-app-service dll",
+    "lint": "fast-app-service lint",
+    "lint:fix": "fast-app-service lint:fix",
+    "wifiStart": "fast-app wifiStart",
+    "wifiStop": "fast-app wifiStop",
+    "wifiSync": "fast-app wifiSync -r ./dist -u false",
+    "wifiSyncAll": "fast-app wifiSync -r ./dist -u true",
+    "wifiInfo": "fast-app wifiInfo",
+    "wifiLog": "fast-app wifiLog "
+  },
+  "author": "tangfei",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnmiaosu/fast-app-template.git"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions",
+    "Android >= 3.2"
+  ],
+  "devDependencies": {
+    "fast-app-service": "^1.0.3"
+  }
+}
