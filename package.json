@@ -6,8 +6,8 @@
     "serve": "fast-app-service serve",
     "build": "fast-app-service build",
     "dll": "fast-app-service dll",
-    "lint": "fast-app-service lint",
-    "lint:fix": "fast-app-service lint:fix",
+    "lint": "eslint --ext .vue,.js ./src --cache",
+    "lint:fix": "eslint --fix --ext .vue,.js ./src --cache",
     "wifiStart": "fast-app wifiStart",
     "wifiStop": "fast-app wifiStop",
     "wifiSync": "fast-app wifiSync -r ./dist -u false",
@@ -24,6 +24,53 @@
   "dependencies": {
     "vue": "^2.6.10"
   },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "globals": {
+      "api": true,
+      "$api": true,
+      "App":true,
+      "console":true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "sourceType": "module",
+      "ecmaVersion": 2018,
+      "ecmaFeatures": {
+        "globalReturn": false,
+        "impliedStrict": false,
+        "jsx": false
+      },
+      "allowImportExportEverywhere": false,
+      "codeFrame": true
+    },
+    "rules": {
+      "no-debugger": 1,
+      "indent": [
+        "error",
+        2
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-console": "off",
+      "arrow-parens": 0
+    }
+  },
   "browserslist": [
     "defaults",
     "not ie < 11",
@@ -34,6 +81,6 @@
     "Android >= 3.2"
   ],
   "devDependencies": {
-    "fast-app-service": "^0.0.1"
+    "fast-app-service": "^0.0.2"
   }
 }
