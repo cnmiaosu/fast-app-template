@@ -1,6 +1,6 @@
 {
   "name": "fast-app-template",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "fast-app-template",
   "scripts": {
     "serve": "fast-app-service serve",
@@ -27,14 +27,15 @@
   "eslintConfig": {
     "root": true,
     "env": {
+      "node": true,
       "browser": true,
       "es6": true
     },
     "globals": {
       "api": true,
       "$api": true,
-      "App":true,
-      "console":true
+      "App": true,
+      "console": true
     },
     "extends": [
       "eslint:recommended",
@@ -55,14 +56,6 @@
     },
     "rules": {
       "no-debugger": 1,
-      "indent": [
-        "error",
-        2
-      ],
-      "quotes": [
-        "error",
-        "double"
-      ],
       "semi": [
         "error",
         "always"
@@ -81,6 +74,6 @@
     "Android >= 3.2"
   ],
   "devDependencies": {
-    "fast-app-service": "^0.0.4"
+    "fast-app-service": "^0.0.5"
   }
 }
