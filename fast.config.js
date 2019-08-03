@@ -12,12 +12,32 @@
 'use strict';
 
 module.exports = {
+
     //基本配置
     config:{
         //build打包分析工具
         bundleAnalyzer:false,
 
         //设计稿尺寸宽度
-        UiWidth:375
+        UiWidth:375,
+
+        /*
+        * DllPlugin
+        * vue无需添加，脚手架默认添加了
+        * 格式举例：
+        *   { 'vue' : ['vue'] }
+        */
+        dll:{}
+    },
+
+    //开发环境配置
+    devConfig:{
+
+    },
+
+    //正式环境配置
+    prodConfig:{
+
     }
+
 }

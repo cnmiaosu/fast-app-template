@@ -1,6 +1,6 @@
 {
   "name": "fast-app-template",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "fast-app-template",
   "scripts": {
     "serve": "fast-app-service serve",
@@ -74,6 +74,6 @@
     "Android >= 3.2"
   ],
   "devDependencies": {
-    "fast-app-service": "^0.0.6"
+    "fast-app-service": "^0.0.7"
   }
 }
