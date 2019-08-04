@@ -1,6 +1,6 @@
 {
   "name": "fast-app-template",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "fast-app-template",
   "scripts": {
     "serve": "fast-app-service serve",
@@ -69,6 +69,6 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
-    "fast-app-service": "^0.0.8"
+    "fast-app-service": "^0.0.9"
   }
 }
