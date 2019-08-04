@@ -11,8 +11,7 @@
 // +----------------------------------------------------------------------
 import Vue from 'vue';
 
-
 //实例化vue
 new Vue({
-    render: h => h(App),
-}).$mount('#app')
+    render: h => h(App)
+}).$mount('#app');

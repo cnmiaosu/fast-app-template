@@ -1,6 +1,6 @@
 {
   "name": "fast-app-template",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "fast-app-template",
   "scripts": {
     "serve": "fast-app-service serve",
@@ -17,13 +17,6 @@
   },
   "author": "tangfei",
   "license": "UNLICENSED",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cnmiaosu/fast-app-template.git"
-  },
-  "dependencies": {
-    "vue": "^2.6.10"
-  },
   "eslintConfig": {
     "root": true,
     "env": {
@@ -39,9 +32,8 @@
     },
     "extends": [
       "eslint:recommended",
-      "plugin:vue/recommended"
+      "plugin:vue/essential"
     ],
-    "parser": "vue-eslint-parser",
     "parserOptions": {
       "parser": "babel-eslint",
       "sourceType": "module",
@@ -73,7 +65,10 @@
     "last 3 iOS versions",
     "Android >= 3.2"
   ],
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
   "devDependencies": {
-    "fast-app-service": "^0.0.7"
+    "fast-app-service": "^0.0.8"
   }
 }
