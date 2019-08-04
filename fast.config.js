@@ -27,7 +27,10 @@ module.exports = {
         * 格式举例：
         *   { 'vue' : ['vue'] }
         */
-        dll:{}
+        dll:{},
+
+        //css 白名单，如使用第三方UI组件，如build后样式无效，请添加前缀，如 [/van-.*/] 对应 van-nav-bar等等class或者id
+        whitePatterns:[]
     },
 
     //开发环境配置
